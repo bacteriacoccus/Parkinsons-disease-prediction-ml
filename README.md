@@ -25,3 +25,16 @@ The model achieved high sensitivity, correctly identifying all Parkinson’s cas
 ## Repository Structure
 - `parkinson_disease_ML_Project.ipynb` – main notebook
 - `confusion_matrix.png` – result visualization
+
+## Dataset License and Attribution
+
+This project uses the **Oxford Parkinson’s Disease Detection Dataset**, licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0).
+
+**Original authors:**
+Little, M. A., McSharry, P. E., Hunter, E. J., & Ramig, L. O. (2008)
+
+**Source:**
+UCI Machine Learning Repository
+
+Full license:
+https://creativecommons.org/licenses/by/4.0/
