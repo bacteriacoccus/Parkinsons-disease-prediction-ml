@@ -3,17 +3,29 @@
 ## Overview:
 This project applies machine learning techniques to classify individuals as Parkinson’s disease patients or healthy controls using biomedical voice measurements.
 
-## Dataset:
-The dataset consists of voice recordings with multiple biomedical features. The target variable indicates Parkinson’s disease status.
+## Clinical Relevance
+Parkinson’s disease is a progressive neurodegenerative disorder where early diagnosis is crucial. Traditional diagnostic methods can be subjective, whereas acoustic analysis of voice recordings offers a non-invasive, objective, and cost-effective approach for early detection.
 
+This project explores how vocal biomarkers can be used for automated disease classification.
+
+## Dataset:
+The dataset consists of biomedical voice measurements from individuals with and without Parkinson’s disease. Each instance represents a voice recording, with multiple numerical features capturing vocal characteristics.
+
+Target variable:
+- `0` → Healthy
+- `1` → Parkinson’s Disease
+  
 ## Methods:
 - Data preprocessing and cleaning
-- Feature scaling (StandardScaler)
-- Logistic Regression model
-- Train-test split
+- Removal of non-informative features (e.g., identifiers)
+- Feature scaling using StandardScaler
+- Train-test split for model evaluation
+- Logistic Regression for classification
 
-## Results:
-The model achieved high sensitivity, correctly identifying all Parkinson’s cases, with a small number of false positives.
+## Results
+The model demonstrated high sensitivity (recall), successfully identifying all Parkinson’s cases in the test set, with a small number of false positives.
+
+This is particularly important in clinical settings, where failing to detect a disease (false negative) is more critical than over-diagnosis.
 
 ## Tools & Technologies:
 - Python
@@ -24,7 +36,10 @@ The model achieved high sensitivity, correctly identifying all Parkinson’s cas
 
 ## Repository Structure
 - `parkinson_disease_ML_Project.ipynb` – main notebook
-- `confusion_matrix.png` – result visualization
+- `confusion_matrix.png` – model evaluation
+
+## Future Work
+This project can be extended by integrating multimodal data sources such as neuroimaging (MRI), genomic data, or longitudinal clinical records. Combining multiple data modalities could improve predictive accuracy and provide deeper insights into neurodegenerative disease progression.
 
 ## Dataset License and Attribution
 
@@ -33,8 +48,8 @@ This project uses the **Oxford Parkinson’s Disease Detection Dataset**, licens
 **Original authors:**
 Little, M. A., McSharry, P. E., Hunter, E. J., & Ramig, L. O. (2008)
 
-**Source:**
-UCI Machine Learning Repository
+**Source:**  
+UCI Machine Learning Repository  
 
-Full license:
+**License:**  
 https://creativecommons.org/licenses/by/4.0/
